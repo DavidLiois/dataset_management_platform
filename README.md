@@ -13,7 +13,7 @@
  2. Clone this repository.
  3. Go to the directory where manage.py is located.
  4. Open your CMD.
- 5. Run "py -m pip install -r requirements.txt".
+ 5. Run "py -m pip install -r requirements.txt" if error occured you can use this command instead "py -m pip install django-heroku" (the command I use in this README is for Windows CMD).
  6. Run "py manage.py makemigrations" and  "py manage.py migrate".
  7. Run "py manage.py createsuperuser" to create an admin account and follow the procedure (if there's no error occurred in step 5).
  8. Run "py manage.py runserver" and go to http://127.0.0.1:8000/ on your browser.
