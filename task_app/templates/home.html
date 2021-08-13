@@ -1,0 +1,21 @@
+{% extends 'base.html' %} 
+
+{% block title %}- Home Page{% endblock %} 
+
+{% block content %}
+
+<section>
+  {% if user.is_authenticated %}
+    <div class="auth">
+      <a href="{% url 'task_app:new_task' %}">New Tasks</a>
+      <a href="{% url 'task_app:task' %}">Tasks</a>
+    </div>
+  {% else %}
+    <div class="notauth">
+      <p>You are not logged in</p>    
+      <a href="{% url 'login' %}">Log In</a>    
+    </div>
+  {% endif %}
+</section>
+
+{% endblock %}

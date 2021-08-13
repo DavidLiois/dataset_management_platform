@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dataset Management Platform {% block title %}{% endblock %}</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'task_app/style.css' %}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-name">
+      <a href="{% url 'home' %}" class="home-btn">
+        <h1>Dataset Management Platform</h1>
+      </a>         
+      </div>
+      <div class="header-content">
+        {% if user.is_authenticated %}
+          <p>Hi, {{ user.username }}!</p>
+          <a href="{% url 'logout' %}" class="header-logout">Log Out</a>
+        {% endif %}
+      </div>
+    </header>
+
+    {% block content %} 
+    {% endblock %}
+    
+    <footer>
+      <h5>
+        Created By David Liois Jayadi © 2021
+      </h5>
+    </footer>
+  </body>
+</html>

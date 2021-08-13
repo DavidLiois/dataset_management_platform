@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section>        
+    <div class="handler">
+        {% if error_message %}
+            <h2>Task Operation Failed</h2>
+            <h3>{{error_message}}</h3>
+            <a href="{% url 'task_app:task' %}" class="login-btn">Back</a>    
+        {% endif %}
+        {% if TaskTitle %}
+            <h2>New Task Successfully Added</h2>
+            <h3>Title : {{ TaskTitle }}</h3>
+            <h3>Filename : {{ Filename }}</h3>
+            <a href="{% url 'task_app:task' %}" class="login-btn">Home</a>    
+        {% endif %}
+        {% if Booked %}
+            <h2>Task Booked</h2>
+            <h3>Booked By : {{ Username }}</h3>     
+            <a href="{% url 'task_app:task'%}" class="login-btn">Back</a> 
+        {% endif %}
+        {% if Revoke %}
+            <h2>Task Revoked</h2>            
+            <a href="{% url 'task_app:task'%}" class="login-btn">Back</a> 
+        {% endif %}
+        {% if Deleted %}
+            <h2>Task Deleted</h2>
+            <a href="{% url 'task_app:task'%}" class="login-btn">Back</a> 
+        {% endif %}
+    </div>
+</section>
+
+{% endblock %}

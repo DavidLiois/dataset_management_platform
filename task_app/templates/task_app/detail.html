@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section>        
+    <div class="detail">
+        <h1>Tasks Detail</h1>
+        <table class="table">
+            <tr>
+                <th>Task Title</th>
+                <th>Booked By</th>
+                <th>Upload Date</th>                
+                <th>Action</th>
+            </tr>                                                     
+            <tr>
+                <td>{{ tasks.Title }}</td>  
+                <td>{{ tasks.BookedByUser }}</td>
+                <td>{{ tasks.UploadDate }}</td>                
+                {% if tasks.BookedByUser %}
+                    <td>
+                        <a href="{% url 'task_app:revoking' tasks.id%}" class="btn">Revoke</a>
+                        <a href="{% url 'task_app:download' tasks.id%}" class="btn">Download</a>
+                        <a href="{% url 'task_app:delete' tasks.id%}" class="btn">Delete</a>
+                    </td>                    
+                {% else %}
+                    <td><a href="{% url 'task_app:booking' tasks.id%}" class="btn book-btn">Book</a></td>                    
+                {% endif %}            
+            </tr>            
+        </table>                    
+        <a href="{% url 'task_app:task' %}" class="login-btn">Back</a>
+    </div>
+</section>
+
+{% endblock %}

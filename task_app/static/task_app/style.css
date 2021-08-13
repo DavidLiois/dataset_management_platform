@@ -1,0 +1,282 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    outline: none;
+}
+
+/* color scheme #f3b375, #21212d, #c4c0c8 */
+
+body{
+    background-color:#21212d;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:active{
+    color: #21212d;
+}
+
+form{
+    font-weight: bold;    
+    white-space: pre-line;
+}
+
+
+/* header */
+
+header{    
+    padding: 10px;        
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 10vh;
+    text-align: center;
+}
+
+header p{
+    color: #c4c0c8;
+}
+
+.header-name{
+    padding: 2px;
+    margin: 5px;
+}
+
+.header-content{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-btn{
+    color: #f3b375;
+}
+
+.header-content p{
+    margin-right: 2px;        
+    font-weight: 1000;
+}
+
+.header-logout{    
+    padding: 10px;
+    margin: 5px;
+    background-color: #f3b375;
+    color: #21212d;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* section */
+
+section{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* home page */
+
+.auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.auth a{
+    padding: 10px;
+    margin: 5px;
+    font-size: 2.3rem;
+    font-weight: bold;
+    background-color: #f3b375;
+    color: #21212d;
+    border-radius: 20px;
+}
+
+.notauth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notauth p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #c4c0c8;
+}
+
+.notauth a{
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #f3b375;
+    color: #21212d;
+    border-radius: 20px;
+}
+
+/* login page */
+
+.login-form{
+    padding: 10px;
+    text-align: center;
+    background-color: #c4c0c8;
+    border-radius: 20px;
+    color: #21212d;
+}
+
+.login-form h2{
+    font-size: 2rem;
+    color: #21212d;
+}
+
+.login-btn{        
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    background: none;
+    background-color: #f3b375;
+    color: #21212d;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;    
+}
+
+/* new task page */
+
+.new-task-form{
+    padding: 30px;
+    text-align: center;        
+    background-color: #c4c0c8;
+    border-radius: 20px;    
+    color: #21212d;
+}
+
+.new-task-form input[type=text]{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #21212d;        
+}
+
+.new-task-form input[type=text]{
+    background: none;
+}
+
+
+.new-task-form h2{
+    font-size: 2rem;    
+}
+
+/* success-handler */
+
+.handler{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #c4c0c8;
+}
+
+.handler h2{
+    margin-bottom: 10px;
+}
+
+/* task */
+
+.task-list{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c4c0c8;
+}
+
+.task-list h1{
+    font-size: 3rem;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.table {    
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.table td, .table th {        
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;    
+    color: #c4c0c8;
+}
+
+td a{
+    color: #c4c0c8;
+    font-weight: lighter;
+}
+
+td a:hover{
+    font-weight: bold;
+}
+
+.table th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: #c4c0c8;
+color: #21212d;
+}
+
+/* detail page */
+
+.detail{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #c4c0c8;
+}
+
+.detail h1{
+    font-size: 3rem;
+    margin: 10px;
+}
+
+.btn{    
+    padding: 7px;
+    margin: 2px;
+    font-weight: bold;
+    background-color: #f3b375;
+    color: #21212d;
+    border-radius: 10px;
+}
+
+/* footer */
+
+footer{
+    padding: 10px;        
+    color: #c4c0c8;    
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+footer h5{
+    margin: 20px;   
+}

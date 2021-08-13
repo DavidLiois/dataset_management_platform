@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}- Task{% endblock %}
+
+{% block content %}
+
+<section>
+    <div class="task-list">
+        <h1>Tasks List</h1>
+        {% if TaskList %} 
+            <table class="table">
+                <tr>
+                    <th>Task Title</th>
+                    <th>Booked By</th>                       
+                </tr>             
+                {% for task in TaskList %}                            
+                    <tr>
+                        <td><a href="{% url 'task_app:detail' task.id %}">{{ task.Title }}</a></td>  
+                        <td>{{ task.BookedByUser }}</td>                                                
+                    </tr>
+                {% endfor %}  
+            </table>                               
+        {% else %}
+            <h3>No tasks are available.</h3>
+        {% endif %}
+        <a href="{% url 'task_app:new_task' %}" class="login-btn">New Tasks</a>
+        <a href="{% url 'home' %}" class="login-btn">Home</a>
+    </div>
+</section>
+
+{% endblock %}
