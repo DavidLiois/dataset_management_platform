@@ -2,4 +2,5 @@ asgiref==3.4.1
 Django==3.2.6
 pytz==2021.1
 sqlparse==0.4.1
-python-3.9.6
+gunicorn==19.7.1
+whitenoise==3.3.1
