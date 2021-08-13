@@ -14,6 +14,12 @@
  7. Run "py manage.py runserver" and go to http://127.0.0.1:8000/ on your browser.
 
 ### Built With
-* [Django]
-* [HTML5]
-* [CSS3]
+* Django, Python, HTML5, CSS3
+
+Documentation used for making this website :
+
+* https://www.w3schools.com/
+* https://zetcode.com/django/fileresponse/
+* https://stackoverflow.com/questions/43120326/django-check-if-the-uploaded-file-is-a-zip-file
+* https://docs.djangoproject.com/en/3.2/
+* https://github.com/axelpale/minimal-django-file-upload-example
