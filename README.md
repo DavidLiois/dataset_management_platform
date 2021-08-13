@@ -9,7 +9,7 @@
  Password : User123456789
 
  Or using your localhost instead :
- 1. Need the latest version for python, pip, dan django (you might need to add python to your HOME PATH).
+ 1. Need the latest version for Python (3.9.6), and pip (21.1.3).
  2. Clone this repository.
  3. Go to the directory where manage.py is located.
  4. Open your CMD.
