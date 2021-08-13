@@ -5,8 +5,9 @@
  Heroku Link : https://dataset-management.herokuapp.com/
  
  For heroku authentication : <br />
- Username : user01 <br />
- Password : User123456789
+ Username : user01 and user02 <br />
+ Password : User123456789 <br />
+ (Both with same password)
 
  Or using your localhost instead :
  1. Need the latest version for Python (3.9.6), and pip (21.2.3).
