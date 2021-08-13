@@ -2,7 +2,11 @@
  
  Dataset Management Platform
 
- Heroku Link : 
+ Heroku Link : https://dataset-management.herokuapp.com/
+ 
+ For heroku authentication :
+ Username : user01
+ Password : User123456789
 
  Or using your localhost instead :
  1. Need the latest version for python, pip, dan django (you might need to add python to your HOME PATH).
