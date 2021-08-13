@@ -14,6 +14,6 @@
  7. Run "py manage.py runserver" and go to http://127.0.0.1:8000/ on your browser.
 
 ### Built With
-* [Django](https://getbootstrap.com)
-* [HTML5](https://jquery.com)
-* [CSS3](https://laravel.com)
+* [Django]
+* [HTML5]
+* [CSS3]
